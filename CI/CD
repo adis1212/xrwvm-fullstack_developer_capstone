@@ -1,0 +1,189 @@
+{
+  "total_count": 2,
+  "jobs": [
+    {
+      "id": 131356759255,
+      "run_id": 43268030051,
+      "workflow_name": "CI/CD",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/adis1212/xrwvm-fullstack_developer_capstone/actions/runs/43268030051",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVqm9Bc8AAAAelXkU1w",
+      "head_sha": "59db45437f2f697440f602d3d403c6cfa8e672e3",
+      "url": "https://api.github.com/repos/adis1212/xrwvm-fullstack_developer_capstone/actions/jobs/131356759255",
+      "html_url": "https://github.com/adis1212/xrwvm-fullstack_developer_capstone/actions/runs/43268030051/job/131356759255",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-12T17:18:30Z",
+      "started_at": "2026-11-12T17:18:32Z",
+      "completed_at": "2026-11-12T17:19:12Z",
+      "name": "Node.js Lint and Build (18.x)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-12T17:18:33Z",
+          "completed_at": "2026-11-12T17:18:34Z"
+        },
+        {
+          "name": "Checkout code",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-12T17:18:34Z",
+          "completed_at": "2026-11-12T17:18:35Z"
+        },
+        {
+          "name": "Use Node.js 18.x",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-12T17:18:35Z",
+          "completed_at": "2026-11-12T17:18:40Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-12T17:18:40Z",
+          "completed_at": "2026-11-12T17:19:00Z"
+        },
+        {
+          "name": "Build and lint frontend",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-12T17:19:00Z",
+          "completed_at": "2026-11-12T17:19:09Z"
+        },
+        {
+          "name": "Post Use Node.js 18.x",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-12T17:19:09Z",
+          "completed_at": "2026-11-12T17:19:10Z"
+        },
+        {
+          "name": "Post Checkout code",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-12T17:19:10Z",
+          "completed_at": "2026-11-12T17:19:10Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-12T17:19:10Z",
+          "completed_at": "2026-11-12T17:19:10Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/adis1212/xrwvm-fullstack_developer_capstone/check-runs/131356759255",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000013,
+      "runner_name": "GitHub Actions 1000000013",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 131356759439,
+      "run_id": 43268030051,
+      "workflow_name": "CI/CD",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/adis1212/xrwvm-fullstack_developer_capstone/actions/runs/43268030051",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOVqm9Bc8AAAAelXkVjw",
+      "head_sha": "59db45437f2f697440f602d3d403c6cfa8e672e3",
+      "url": "https://api.github.com/repos/adis1212/xrwvm-fullstack_developer_capstone/actions/jobs/131356759439",
+      "html_url": "https://github.com/adis1212/xrwvm-fullstack_developer_capstone/actions/runs/43268030051/job/131356759439",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-12T17:18:30Z",
+      "started_at": "2026-11-12T17:18:32Z",
+      "completed_at": "2026-11-12T17:18:45Z",
+      "name": "Python Lint",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-11-12T17:18:33Z",
+          "completed_at": "2026-11-12T17:18:33Z"
+        },
+        {
+          "name": "Checkout code",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-11-12T17:18:33Z",
+          "completed_at": "2026-11-12T17:18:35Z"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-11-12T17:18:35Z",
+          "completed_at": "2026-11-12T17:18:35Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-11-12T17:18:35Z",
+          "completed_at": "2026-11-12T17:18:42Z"
+        },
+        {
+          "name": "Run flake8 Python linter",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-11-12T17:18:42Z",
+          "completed_at": "2026-11-12T17:18:43Z"
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-11-12T17:18:43Z",
+          "completed_at": "2026-11-12T17:18:43Z"
+        },
+        {
+          "name": "Post Checkout code",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-11-12T17:18:43Z",
+          "completed_at": "2026-11-12T17:18:43Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-11-12T17:18:43Z",
+          "completed_at": "2026-11-12T17:18:43Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/adis1212/xrwvm-fullstack_developer_capstone/check-runs/131356759439",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000012,
+      "runner_name": "GitHub Actions 1000000012",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}
