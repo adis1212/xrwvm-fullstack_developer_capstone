@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <!-- Required Stylesheet Links -->
   <link rel="stylesheet" href="/static/bootstrap.min.css">
   <link rel="stylesheet" href="/static/style.css">
 </head>
+<body>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
@@ -13,60 +16,62 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-        <h2>Contact Us</h2>
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/contactus.png" alt="Card image">
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header" style="padding: 25px; text-align: center; background-color: #f8f9fa; border-bottom: 1px solid #dee2e6;">
+      <h1 style="color: darkcyan; font-weight: bold; margin-bottom: 10px;">Contact Us</h1>
+      <p style="font-size: 1.1rem; color: #495057;">Get in touch with our customer support and sales teams across our regional centers.</p>
+    </div>
+    <div style="display: flex;flex-direction: row; margin:auto; padding: 20px; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <img class="card-img-top" src="/static/contactus.png" alt="Customer Support">
         <div class="card-body">
-          <p class="title">Aditya</p>
-          <p>Thane Office</p>
-          <p class="card-text">Happy Diwali!</p>
-          <p>Phone: 80709549549. Address: Kalyan, Thane.</p>
-          <p>aditya@example.com</p>
+          <p class="title" style="font-weight: bold; font-size: 1.2rem; color: #212529;">Customer Support</p>
+          <p style="color: #6c757d; font-weight: 500;">General Inquiries & Assistance</p>
+          <p class="card-text">24/7 dedicated assistance for dealership reviews, customer accounts, and website support.</p>
+          <p><strong>Phone:</strong> +1 (800) 555-0199</p>
+          <p><strong>Address:</strong> 100 Dealership Way, Chicago, IL 60601</p>
+          <p><a href="mailto:support@dealerships.com" style="color: darkcyan; text-decoration: none;">support@dealerships.com</a></p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <img class="card-img-top" src="/static/person.png" alt="Sales Department">
         <div class="card-body">
-          <p class="title">Atharva</p>
-          <p>Pune Office</p>
-          <p class="card-text">Happy Holi!</p>
-          <p>Phone: 98923445569. Address: Pimpri, Pune.</p>
-          <p>atharva@example.com</p>
+          <p class="title" style="font-weight: bold; font-size: 1.2rem; color: #212529;">Sales Department</p>
+          <p style="color: #6c757d; font-weight: 500;">New & Used Vehicle Sales</p>
+          <p class="card-text">Connect with certified automotive specialists for price quotes, trade-ins, and financing options.</p>
+          <p><strong>Phone:</strong> +1 (800) 555-0142</p>
+          <p><strong>Address:</strong> 450 Automotive Parkway, Dallas, TX 75201</p>
+          <p><a href="mailto:sales@dealerships.com" style="color: darkcyan; text-decoration: none;">sales@dealerships.com</a></p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <img class="card-img-top" src="/static/person.png" alt="Corporate Headquarters">
         <div class="card-body">
-          <p class="title">Ayush</p>
-          <p>Mumbai Office</p>
-          <p class="card-text">Merry Christmas!</p>
-          <p>Phone: 1234567898. Address: Chembur, Mumbai.</p>
-          <p>ayush@example.com</p>
+          <p class="title" style="font-weight: bold; font-size: 1.2rem; color: #212529;">Corporate Headquarters</p>
+          <p style="color: #6c757d; font-weight: 500;">Partnerships & Media</p>
+          <p class="card-text">Corporate office inquiries, national dealer network relations, and career opportunities.</p>
+          <p><strong>Phone:</strong> +1 (800) 555-0188</p>
+          <p><strong>Address:</strong> 1200 Innovation Center, New York, NY 10001</p>
+          <p><a href="mailto:contact@dealerships.com" style="color: darkcyan; text-decoration: none;">contact@dealerships.com</a></p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
-
+</body>
 </html>
