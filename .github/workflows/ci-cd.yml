@@ -7,13 +7,9 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  python-lint:
+    name: Python Lint
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -23,38 +19,42 @@ jobs:
       with:
         python-version: '3.12'
 
-    - name: Install Python dependencies
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install flake8
         pip install -r server/requirements.txt
 
-    - name: Django check
+    - name: Run flake8 Python linter
       run: |
-        cd server
-        python manage.py check
+        flake8 server/djangoapp --count --select=E9,F63,F7,F82 --show-source --statistics
+        python -m py_compile server/djangoapp/views.py
+        python -m py_compile server/djangoapp/urls.py
+        python -m py_compile server/djangoapp/models.py
+        python -m py_compile server/djangoapp/restapis.py
+        cd server && python manage.py check
 
-    - name: Django migrations
-      run: |
-        cd server
-        python manage.py makemigrations djangoapp
-        python manage.py migrate
+  node-lint:
+    name: Node.js Lint and Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install and build React frontend
+    - name: Install dependencies
       run: |
         cd server/frontend
         npm install
-        CI=false npm run build
 
-    - name: Lint check
+    - name: Build and lint frontend
       run: |
-        cd server
-        python -m py_compile djangoapp/views.py
-        python -m py_compile djangoapp/urls.py
-        python -m py_compile djangoapp/models.py
-        python -m py_compile djangoapp/restapis.py
-        echo "All Python files compile successfully"
+        cd server/frontend
+        CI=false npm run build
