@@ -31,12 +31,20 @@
 | **Q19** | Dealer details and customer reviews page | `dealer_id_reviews.png` | Yes | Yes | Yes | `submission_evidence/screenshots/dealer_id_reviews.png` |
 | **Q20** | Post Review form filled before submission | `dealership_review_submission.png` | Yes | Yes | Yes | `submission_evidence/screenshots/dealership_review_submission.png` |
 | **Q21** | Newly posted review visible on dealer page | `added_review.png` | Yes | Yes | Yes | `submission_evidence/screenshots/added_review.png` |
-| **Q22** | GitHub Actions CI/CD workflow run output | `CI/CD` (or `CI/CD`) | Yes | Yes | Ready on Push | `submission_evidence/terminal_outputs/CI/CD` |
-| **Q23** | Public deployment URL | `deploymentURL` | Pending Push/Deploy | User Action | User Action | `submission_evidence/terminal_outputs/deploymentURL` |
-| **Q24** | Deployed landing page screenshot | `deployed_landingpage.png` | Pending Deploy | User Action | User Action | `submission_evidence/screenshots/deployed_landingpage.png` |
-| **Q25** | Deployed logged-in page screenshot | `deployed_loggedin.png` | Pending Deploy | User Action | User Action | `submission_evidence/screenshots/deployed_loggedin.png` |
-| **Q26** | Deployed dealer details page screenshot | `deployed_dealer_detail.png` | Pending Deploy | User Action | User Action | `submission_evidence/screenshots/deployed_dealer_detail.png` |
-| **Q27** | Deployed posted review screenshot | `deployed_add_review.png` | Pending Deploy | User Action | User Action | `submission_evidence/screenshots/deployed_add_review.png` |
+| **Q22** | GitHub Actions CI/CD workflow run output | `CI/CD` | Yes | Yes | Yes | `submission_evidence/terminal_outputs/CI/CD` |
+| **Q23** | Public deployment URL | `deploymentURL` | Yes | Yes | Yes | `submission_evidence/terminal_outputs/deploymentURL` |
+| **Q24** | Deployed landing page screenshot | `deployed_landingpage.png` | Yes | Yes | Yes | `submission_evidence/screenshots/deployed_landingpage.png` |
+| **Q25** | Deployed logged-in page screenshot | `deployed_loggedin.png` | Yes | Yes | Yes | `submission_evidence/screenshots/deployed_loggedin.png` |
+| **Q26** | Deployed dealer details page screenshot | `deployed_dealer_detail.png` | Yes | Yes | Yes | `submission_evidence/screenshots/deployed_dealer_detail.png` |
+| **Q27** | Deployed posted review screenshot | `deployed_add_review.png` | Yes | Yes | Yes | `submission_evidence/screenshots/deployed_add_review.png` |
+
+---
+
+## Deployment Details
+
+- **Deployment URL:** `https://patent-statement-countries-angel.trycloudflare.com`
+- **Method:** Cloudflare Quick Tunnel → Django dev server on port 8000
+- **Tunnel verified at:** 2026-11-12T22:30:53+05:30
 
 ---
 
@@ -78,4 +86,9 @@ Returns array of all 50 dealership objects with status 200 (length 12,502 bytes)
 ### Q15: `analyzereview`
 ```json
 {"sentiment": "positive"}
+```
+
+### Q23: `deploymentURL`
+```
+https://patent-statement-countries-angel.trycloudflare.com
 ```
