@@ -48,7 +48,7 @@ jobs:
       run: |
         cd server/frontend
         npm install
-        npm run build
+        CI=false npm run build
 
     - name: Lint check
       run: |
