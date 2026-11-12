@@ -1,0 +1,60 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r server/requirements.txt
+
+    - name: Django check
+      run: |
+        cd server
+        python manage.py check
+
+    - name: Django migrations
+      run: |
+        cd server
+        python manage.py makemigrations djangoapp
+        python manage.py migrate
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install and build React frontend
+      run: |
+        cd server/frontend
+        npm install
+        npm run build
+
+    - name: Lint check
+      run: |
+        cd server
+        python -m py_compile djangoapp/views.py
+        python -m py_compile djangoapp/urls.py
+        python -m py_compile djangoapp/models.py
+        python -m py_compile djangoapp/restapis.py
+        echo "All Python files compile successfully"
